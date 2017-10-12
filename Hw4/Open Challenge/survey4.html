@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+
+header
+{
+	
+	color:green;
+	text-align: center;
+	border-bottom:1px solid #384047;
+	font-family: sans-serif;	
+}
+h1 {
+	width : 1000px;
+}
+
+div.piccenter {
+	text-align:center;
+}
+
+form.center {
+	width : 800px;
+	margin : 0 auto;
+}
+
+.my_box {
+	height:20px;
+	width:200px;
+	padding: 2px 2px 2px 2px;
+	border: #88888 1px solid;
+	background-color:#FFFFFF;
+	font-family: 궁서 ;
+} 
+
+footer {
+	display:table;
+	background-color: #061c37;
+    COLOR: white;
+	height : 100px;
+	width:100%;
+	
+	text-align:center;
+	vertical-align:middle;
+	
+	}
+
+b{
+	display:table-cell;
+	font-size : 20px;
+	text-align: center;
+	vertical-align:middle;
+}
+
+div.wrapper{
+	text-align:left;
+
+}
+
+	</style>
+
+<meta charset="UTF-8">
+<title>Application Form </title>
+</head>
+<body>
+
+	
+	<header>
+   
+	   <h1>Application Form</h1>
+		
+    </header>
+
+    <section>
+
+        <div class="piccenter">
+            <img src="a.jpg" width="800px" height="500"  hspace="20" vspace="20">
+		</div>
+			
+        <h1 style="text-align:right; width : 1000px;">
+			<a href="https://www.youtube.com/watch?v=Nck6BZga7TQ">Before Write down, Check this video first!</a>
+		</h1>
+        <div class="wrapper">
+		    <form class="center" action="survey4.html" method="get">
+			<h2>Age</h2>
+				<input type="radio" name="grade" value="1">
+					1~10
+				<input type="radio" name="grade" value="2" >
+					20~30
+				<input type="radio" name="grade" value="3">
+					30~40
+				<input type="radio" name="grade" value="4">
+					over 40
+                <h2>Gender</h2>
+				
+             	<input type="radio" name="gender" value="1">
+					Male
+				<input type="radio" name="gender" value="2" >
+					Female
+                <h2>favorite Song</h2> <input type="text" name="hoby" list="field" class="my_box"><br>
+					
+                <datalist id="field">
+						<option value="Hello">
+						<option value="Someone like you">
+						<option value="Rolling in the deep">
+                </datalist>
+				<h2>Name</h2><input type="text" size="15" value="" class="my_box"> <br />
+				<h2>Address</h2><input type="text" size="15" value=""class="my_box" >
+                
+                <h2>Tell us your opinion about above video. </h2> 
+			
+                <textarea cols="60" rows="5" >Write here!</textarea>
+		
+                <br />
+			
+                <input type="submit" value="Submit" style="margin-bottom:50px;" >
+			</form>
+        </div>
+    </section>
+
+    <footer>
+
+        <b> Copyright 2017 by Daniel </b>
+
+    </footer>
+
+</body>
+</html>
