@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+	난수
+</title>
+</head>
+<body>
+	<h3>10개 생성</h3>
+<hr>
+<script>
+
+	var plots= new 	Array(10);
+    var plots1 = new Array(10);
+	
+	for(var i=0 ; i<plots.length ; i++)
+	{
+		var n=Math.random()*100; //0~99.9999
+        var k=Math.floor(n)+1; // 1~100 정수
+		plots[i]=k;
+        plots1[i]=k;
+		document.write(plots[i] +"<br>");
+	}
+    var big =plots[0]; //big에 가장 큰수저장하기
+    for(var i=0 ; i<plots.length ; i++)
+        {
+            if(big<plots[i])
+                {
+                    big=plots[i];
+                    i--;
+                                        
+                }
+        }
+    document.write("<hr>");
+    document.write("가장 큰수는"+big +"<hr>");
+	plots.sort(function(a,b) {
+        return a-b; 
+    });
+   for(var i=0 ; i<plots.length ; i++)
+       {
+           document.write(plots[i]+" ");
+       }
+		
+	
+</script>
+</body>
+</html>

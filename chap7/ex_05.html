@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5번문제입니다.</title>
+    </head>
+    <body>
+        <script>
+            var names = new Array("wonsun","jaemoonlee","kitae","gracehwang");
+            var long=names[0];
+            //(1) name 배열에서 들어 있는 각 이름을 출력하라
+            for(var i=0 ; i<names.length ; i++)
+                {
+                    document.write(names[i]+" ");
+                }
+            //(2) names 배열에서 가장 긴 이름을 출력하라.
+            for(var i=0 ; i<names.length ; i++)
+                {
+                    if(long.length < names[i].length)
+                        {
+                            long=names[i];
+                            
+                        }
+                    
+                }
+            document.write("<hr>");
+            document.write("가장 긴 이름은" +long+"입니다.");
+            document.write("<hr>");
+            //(3) names 배열에서 사전에서 가장 먼저 나오는 이름을 출력하라.
+            names.sort();
+            for(var i=0 ; i<names.length; i ++)
+                {
+                    document.write(names[i] +" ");
+                }
+            //(4) 배열을 증가 순으로 재 정렬하여 출력하라
+        </script>
+    </body>
+</html>

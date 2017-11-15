@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>방문 요일</title>
+    </head>
+    <body>
+        <h3>일요일은 pink, 다른 요일은 gold 배경</h3>
+        <hr>
+        <script>
+            var current = new Date(); //current 에 Date() 입력
+            var k=current.getDay(); // 일0 월 1 ~ 토6
+            
+            
+            if(k>=1 && k<=6)
+                {
+                    document.body.style.backgroundColor="gold";
+                }
+            else {
+                document.body.style.backgroundColor="pink";
+            }
+           
+            document.write("오늘 :");
+            document.write(current.getDate(),"일,");
+            
+            switch(k){
+                case 0: document.write("일요일");
+                    break;
+                case 1:document.write("월요일");
+                    break;
+                case 2:document.write("화요일");
+                    break;
+                case 3:document.write("수요일");
+                    break;
+                case 4:document.write("목요일");
+                    break;
+                case 5:document.write("금요일");
+                    break;
+                case 6:document.write("토요일");
+                    break;
+                    }
+           
+            
+            
+        </script>
+    </body>
+</html>

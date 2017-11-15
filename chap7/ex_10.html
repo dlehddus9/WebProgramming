@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>10번 문제입니다.</title>
+    <script>
+        var book=new Object();
+        book.title="HTML5";
+        book.author="황기태";
+        book.price=20000;
+    </script>
+</head>
+    <body>
+        <script>
+            
+           var book = new Array(5);
+            for(var i=0 ; i<book.length ; i++)
+                {
+                   var line= prompt("콤마(,)로 분리하면서 책제목 저자 가격 순으로 입력",0);
+                    line=line.split(",");
+                    book[i].title=line[0];
+                    book[i].author=line[1];
+                    book[i].price=line[2];
+                    document.write(line[0] +" ");
+                    document.write(line[1] +" ");
+                    document.write(line[2] +" ");
+                    
+                }
+        </script>
+    </body>
+</html>
