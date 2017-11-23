@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>OpenChellenge9</title>
+   <meta charset="utf-8">
+
+   <style>
+     table,td,th{
+		border:1px solid black;
+		width : 100%;
+		height : 100%;
+		
+		}
+		td,th{
+		width : 80px;
+		height:80px;
+		}
+
+   </style>
+
+   <script>
+
+      var random = 0;
+      var i = 0; //random값을 저장할 변수
+
+      function click1() {
+
+         random = Math.floor(Math.random()*100);
+         document.images[random].src="lee1.png" ;
+
+         //랜덤위치의 셀에 사진크기를 조절
+         document.images[random].width=50;
+         document.images[random].height=50;
+		 
+
+         document.images[i].width = 0;
+         document.images[i].height = 0;
+         i = random; //몇번째 셀인지 저장
+		 //document.images[random].src=""; 으로하면안된다.
+      }
+
+
+   </script>
+
+</head>
+
+<body onload="click1()">
+   <h1>OpenChellenge9</h1>
+   <hr>
+
+   <script>
+      document.write("<table>");
+      document.write("<thead></thead>");
+      document.write("<tbody>");
+
+      for(var i=0; i<10; i++) {
+
+         document.write("<tr>");
+
+         for(var j=0; j<10; j++) {
+            document.write("<td><img src='' onclick='click1()'></td>");
+         }
+         document.write("</tr>");
+      }
+
+
+
+   document.write("</tbody>");
+   document.write("</table>");
+   </script>
+
+</body>
+</html>
